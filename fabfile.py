@@ -1,7 +1,6 @@
 import json
 from fabric.api import local
 
-
 def update():
     local('rm *.js')
     local('rm *.css')
