@@ -31138,7 +31138,8 @@ module.exports.cloneCssStyles = function(svg, classes){
             catch(err) {
                 if(typeof console !== 'undefined'){
                     if(console.warn !== 'undefined'){
-                        console.warn('Invalid CSS selector "' + rule.selectorText + '"', err);
+                        // console.warn('Invalid CSS selector "' + rule.selectorText + '"', err);
+                        // 当IE直接从硬盘打开，rule 是 undefined, 上面一行报错
                     }
                 }
             }
